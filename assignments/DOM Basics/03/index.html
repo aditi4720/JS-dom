@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning About Nodes</title>
 
     <style>
@@ -39,5 +41,24 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+    //solution 1
+    ul.firstElementChild.style.background="blue";
+
+    //solution 2
+    for(let elem of ul.children)
+    {
+       elem.style.background= "blue";
+    }
+
+    //solution3
+    document.body.children[3].lastElementChild.style.background="pink";
+
+    //solution 4
+    let listnode= ul.children[1];
+
+    //solution 5
+    listnode.previousElementSibling.style.background="coral";
+    listnode.nextElementSibling.style.background="aquamarine";
+
   </script>
 </html>
