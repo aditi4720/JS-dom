@@ -47,6 +47,33 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+
+      //Solution 1
+      elem= document.getElementById('demo');
+      elem.style.border="1px solid purple";
+
+      //solution 2
+      for(i=0; i<demoClass.length;i++)
+      {
+        demoClass[i].style.border="1px solid orange";
+      }
+
+      //solution 3
+      const tagarticle= document.getElementsByTagName('article');
+      for(i=0; i<tagarticle.length;i++)
+      {
+        tagarticle[i].style.border="1px solid blue";
+      }
+
+      //solution 4
+      const demoQuery = document.querySelector('#demo-query');
+      demoQuery.style.border = '1px solid red';
+
+      //solution 5
+      const demoQueryAll = document.querySelectorAll('.demo-query-all');
+      demoQueryAll.forEach(query => {
+      query.style.border = '1px solid green';
+      });
     </script>
   </body>
 </html>
