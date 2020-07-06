@@ -1,0 +1,46 @@
+body{
+    background-color: salmon;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    padding: 1em;
+}
+#quoteDisplay{
+    height: 300px;
+    width: 60%;
+    background-color: purple;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quote-text{
+    color: white;
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 45px;
+}
+#quote-author{
+    color: white;
+    padding: 1em;
+    font-family: cursive;
+    text-align: center;
+    font-size: 35px;
+}
+i{
+    font-size: 40px;
+}
+button{
+    padding: 8px;
+    background-color: thistle;
+    border-width: 2px;
+    font-weight: bolder;
+    border-color: palevioletred;
+    text-transform: uppercase;
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
