@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mouse Move</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <script>
+        let screenLog = document.querySelector('#screen-log');
+       document.addEventListener('mousemove', logKey);
+
+       function logKey(e) {
+          screenLog.innerText= `
+          Screen X/Y: (${e.screenX}, ${e.screenY})
+          Client X/Y: (${e.clientX}, ${e.clientY})`;
+        }
+    </script>
+    <h1>Mouse Move Cursor</h1>
+    <p>881</p>
+    <p>343</p>
+    <p>467</p>
+    <p>164</p>
+    <div id="screen-log"></div>
+</body>
+</html>
