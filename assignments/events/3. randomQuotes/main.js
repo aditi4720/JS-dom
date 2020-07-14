@@ -1,8 +1,18 @@
 var quotes;
 
 // Write your code here
-
-
+function newQuote(){
+    document.body.onkeyup = function(e){
+        if(e.keyCode == 32){
+            //your code
+            var randomQuote = Math.floor(Math.random() * (quotes.length));
+            document.getElementById('quote-text').innerHTML = '<i class="fas fa-quote-left"></i>'+ quotes[randomQuote].quoteText + '<i class="fas fa-quote-right"></i>';
+            document.getElementById('quote-author').innerHTML = quotes[randomQuote].quoteAuthor;
+        }
+    }
+    
+    
+}
 
 quotes = [
     {

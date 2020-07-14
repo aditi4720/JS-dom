@@ -7,10 +7,44 @@
     <title>DOM Basics</title>
   </head>
   <body>
-    <body>
-      <h1>Document Object Model</h1>
+    <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      //Solution 1
+      var para1= document.createElement("p");
+      document.body.appendChild(para1);
+      para1.textContent = 'Hello Javascript!';
+
+      //solution 2
+      var para2= document.createElement("p");
+      document.body.appendChild(para2);
+      para2.innerHTML= "I love <strong>Javascript</strong>";
+      
+      //solution 3
+      var list = document.createElement("UL");
+      list.setAttribute("id", "myUL");
+      document.body.appendChild(list);
+
+      var item1 = document.createElement("LI");
+      var t = document.createTextNode("Buy The groceries");
+      item1.appendChild(t);
+      document.getElementById("myUL").appendChild(item1);
+
+      var item2 = document.createElement("LI");
+      var t = document.createTextNode("Do the laundry");
+      item2.appendChild(t);
+      document.getElementById("myUL").appendChild(item2);
+
+      var item3 = document.createElement("LI");
+      var t = document.createTextNode("Feed the cat");
+      item3.appendChild(t);
+      document.getElementById("myUL").appendChild(item3);
+
+      //solution 4
+      list.removeChild(item1);
+
+
+      
     </script>
   </body>
 </html>
